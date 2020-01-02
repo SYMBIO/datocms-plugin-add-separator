@@ -16,7 +16,6 @@ export default class Main extends Component {
 
   render() {
     const { caption } = this.props;
-    console.log(caption);
     return (
       <h1>{caption}</h1>
     );
