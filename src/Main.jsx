@@ -4,16 +4,11 @@ import PropTypes from 'prop-types';
 import connectToDatoCms from './connectToDatoCms';
 import './style.css';
 
-@connectToDatoCms(plugin => ({
+@connectToDatoCms((plugin) => ({
   developmentMode: plugin.parameters.global.developmentMode,
   caption: plugin.parameters.instance.caption,
 }))
-
-export default class Main extends Component {
-  static propTypes = {
-    caption: PropTypes.bool.isRequired,
-  };
-
+class Main extends Component {
   render() {
     const { caption } = this.props;
     return (
@@ -21,3 +16,9 @@ export default class Main extends Component {
     );
   }
 }
+
+Main.propTypes = {
+  caption: PropTypes.bool.isRequired,
+};
+
+export default Main;
