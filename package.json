@@ -74,7 +74,7 @@
     "html-webpack-tags-plugin": "^2.0.17",
     "localtunnel": "^2.0.0",
     "mini-css-extract-plugin": "^1.2.1",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "sass-loader": "^10.0.5",
     "serve": "^11.3.2",
     "style-loader": "^2.0.0",
